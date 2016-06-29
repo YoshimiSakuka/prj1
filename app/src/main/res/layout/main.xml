@@ -1,11 +1,90 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="top|center"
+	android:orientation="vertical">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<LinearLayout
+		android:layout_height="82.5dip"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/titledb"
+		android:background="#DFDFDF"
+		android:gravity="bottom|left">
+
+		<LinearLayout
+			android:layout_height="50dip"
+			android:layout_width="50dp"
+			android:orientation="horizontal"
+			android:background="@drawable/image_1"
+			android:translationX="5dp"
+			android:translationY="-5dp"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:text="@string/hello_world"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="姨妈红"
+				android:layout_width="wrap_content"
+				android:onClick="red"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="胖次蓝"
+				android:layout_width="wrap_content"
+				android:onClick="pich"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="德国灰"
+				android:layout_width="wrap_content"
+				android:onClick="de"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="鸡蛋黄"
+				android:layout_width="wrap_content"
+				android:onClick="ji"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="少女粉"
+				android:layout_width="wrap_content"
+				android:onClick="fen"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="逗笔绿"
+				android:layout_width="wrap_content"
+				android:onClick="dou"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
 
 </LinearLayout>
+
